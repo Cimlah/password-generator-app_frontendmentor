@@ -1,4 +1,4 @@
-import { Slider, StrengthStates } from './components'
+import { Checkbox, Slider, StrengthStates } from './components'
 import './App.css'
 import { useState } from 'react'
 
@@ -10,13 +10,16 @@ function App() {
 
   return (
     <>
-      <h1>yes</h1>
       <Slider
         characterLength={characterLength}
         setCharacterLength={setCharacterLength}
       />
-      <div className="mb-16">yeah</div>
+
+      <div className="mb-16"></div>
       <StrengthStates state={passwordComplexityCheck} />
+
+      <div className="mb-16"></div>
+      <Checkbox name="what">Yes</Checkbox>
     </>
   )
 }
